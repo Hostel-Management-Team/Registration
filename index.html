@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Signup Step 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="logo">HostelMaster</div>
+
+<div class="container">
+  <div class="form-box">
+
+    <div class="header">
+      <h2>Registration Details</h2>
+      <span class="step">STEP 02 OF 03</span>
+    </div>
+
+    <div class="progress">
+      <div class="segment active"></div>
+      <div class="segment active"></div>
+      <div class="segment"></div>
+    </div>
+
+    <form id="form">
+
+      <div class="row">
+        <div class="input-group">
+          <label>First Name</label>
+          <input type="text" id="firstName" placeholder="John" required>
+        </div>
+
+        <div class="input-group">
+          <label>Last Name</label>
+          <input type="text" id="lastName" placeholder="Doe" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group small">
+          <label>Phone Number</label>
+          <select id="countryCode">
+            <option value="+977">+977</option>
+            <option value="+91">+91</option>
+            <option value="+1">+1</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label style="visibility:hidden;">Phone</label>
+          <input type="text" id="phone" placeholder="000-000-0000" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <label>Hostel/Institution Name</label>
+          <input type="text" id="hostel" placeholder="Ivy Hall Residents" required>
+        </div>
+
+        <div class="input-group">
+          <label>Room/Block</label>
+          <input type="text" id="room" placeholder="Block B - 402" required>
+        </div>
+      </div>
+
+      <p class="gender-title">Gender</p>
+
+      <div class="gender">
+        <label>
+          <input type="radio" name="gender" value="Male">
+          <span>♂ Male</span>
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="Female">
+          <span>♀ Female</span>
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="Other">
+          <span>⚧ Other</span>
+        </label>
+      </div>
+
+      <p class="error" id="errorMsg"></p>
+
+      <!-- ✅ INSIDE FORM -->
+      <button type="submit" class="continue">Continue →</button>
+      <p class="back" onclick="goBack()">← Back to personal info</p>
+
+    </form>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
